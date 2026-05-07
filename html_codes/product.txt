@@ -1,0 +1,214 @@
+<!-- Trust Corner Website -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiance Serum | Trust Corner</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand brand-font fw-bold" href="index.html">
+                <img src="../images/logo.png" alt="Trust Corner Logo" class="me-2">
+                Trust Corner
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+                <div class="d-flex position-relative">
+                    <a href="cart.html" class="nav-link p-2">
+                        <i class="bi bi-bag fs-5"></i>
+                        <span id="cart-count" class="cart-badge" style="display: none;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-secondary-soft py-3 mt-4">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+                    <li class="breadcrumb-item"><a href="shop.html" class="text-decoration-none text-muted">Shop</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-muted">Skincare</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Radiance Serum</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row gx-5">
+                <!-- Product Images -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="product-detail-image mb-3">
+                        <img src="../images/product_serum.png" alt="Radiance Serum" class="img-fluid" id="main-image">
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-3">
+                            <div class="product-detail-image p-2 border" style="cursor: pointer;">
+                                <img src="../images/product_serum.png" alt="Thumbnail 1">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="product-detail-image p-2 bg-light" style="cursor: pointer;">
+                                <img src="../images/product_cream.png" alt="Thumbnail 2" style="opacity: 0.5;"> <!-- Placeholder for demo -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="col-md-6">
+                    <h1 class="brand-font mb-2">Radiance Serum</h1>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="text-warning me-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <span class="text-muted">(24 Reviews)</span>
+                    </div>
+                    <h3 class="fw-bold mb-4">$85.00</h3>
+                    
+                    <p class="text-muted mb-4">
+                        Awaken your skin's natural glow with our advanced Radiance Serum. Formulated with a potent blend of Vitamin C, Hyaluronic Acid, and botanical extracts, this lightweight serum deeply hydrates, brightens, and smooths fine lines.
+                    </p>
+
+                    <div class="mb-4">
+                        <span class="fw-bold">Size:</span> 30ml / 1 oz
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="input-group me-3" style="width: 130px;">
+                            <button class="btn btn-outline-secondary" type="button" onclick="const q = document.getElementById('qty-1'); if(q.value>1)q.value--;">-</button>
+                            <input type="number" class="form-control text-center" id="qty-1" value="1" min="1">
+                            <button class="btn btn-outline-secondary" type="button" onclick="const q = document.getElementById('qty-1'); q.value++;">+</button>
+                        </div>
+                        <button class="btn btn-primary btn-lg flex-grow-1 add-to-cart-btn" data-id="1">Add to Cart</button>
+                    </div>
+
+                    <div class="mb-4 text-muted small">
+                        <p class="mb-1"><i class="bi bi-check2-circle text-success me-2"></i> In Stock - Ships within 24 hours</p>
+                        <p class="mb-1"><i class="bi bi-arrow-repeat text-success me-2"></i> Free 30-Day Returns</p>
+                    </div>
+
+                    <!-- Accordion Details -->
+                    <div class="accordion" id="productAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-light text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Key Ingredients
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#productAccordion">
+                                <div class="accordion-body text-muted">
+                                    <ul>
+                                        <li><strong>Vitamin C (L-Ascorbic Acid):</strong> Brightens and evens skin tone.</li>
+                                        <li><strong>Botanical Hyaluronic Acid:</strong> Deeply hydrates and plumps.</li>
+                                        <li><strong>Vitamin E:</strong> Powerful antioxidant protection.</li>
+                                        <li><strong>Witch Hazel:</strong> Refines pores and soothes.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed bg-light text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How to Use
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#productAccordion">
+                                <div class="accordion-body text-muted">
+                                    Apply 3-5 drops to freshly cleansed and toned face, neck, and décolleté. Follow with your favorite Trust Corner moisturizer. Safe for daily use, morning and night.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="brand-font mb-3">Trust Corner</h5>
+                    <p class="text-muted pe-md-5">Elevating your skincare routine with premium, clean ingredients for a radiant, confident you.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="footer-heading">Shop</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Skincare</a></li>
+                        <li><a href="#">Makeup</a></li>
+                        <li><a href="#">Fragrance</a></li>
+                        <li><a href="#">Bestsellers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="footer-heading">About</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Ingredients</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-heading">Newsletter</h5>
+                    <p class="text-muted">Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <form class="d-flex mt-3">
+                        <input type="email" class="form-control me-2 rounded-0" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top">
+                <div class="col-12 text-center text-muted">
+                    <small>&copy; 2026 Trust Corner. All rights reserved.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
+
+
